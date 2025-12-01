@@ -26,6 +26,9 @@ public:
         ingredientCount = 0;
         ingredients = nullptr;
     }
+    ~Recipe() {
+        delete[] ingredients;
+    }
 };
 
 int main() {
