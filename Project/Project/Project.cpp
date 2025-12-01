@@ -7,3 +7,5 @@
 #include <string>
 #include <fstream>
 using namespace std;
+
+const int MAX_RECIPES = 15;
