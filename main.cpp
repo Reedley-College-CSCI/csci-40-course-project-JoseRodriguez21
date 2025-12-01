@@ -15,5 +15,10 @@ using namespace std;
 const int MAX_RECIPES = 15;
 
 int main() {
+    string userName;
+    int recipeCount = 0;
+    int userChoice;
+    Recipe recipeBook[MAX_RECIPES];
+
     return 0;
 }
