@@ -61,4 +61,12 @@ void loadRecipes(Recipe recipeBook[], int& recipeCount) {
         cout << "/nNo saved recipes found." << endl;
         return;
     }
+
+    inFile >> recipeCount;
+    inFile.ignore();
+
+    for (int i = 0; i < recipeCount; i++) {
+        recipeBook[i].loadFile(inFile);
+    }
+
 }
