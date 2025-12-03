@@ -28,6 +28,16 @@ public:
     }
     ~Recipe() {
         delete[] ingredients;
+
+    }
+    void loadFile(ifstream& in) {
+        getline(in, name);
+        in >> ingredientCount;
+        in.ignore();
+
+        for (int i = 0; i < ingredientCount; i++) {
+            getline(in, ingredients[i]);
+        }
     }
 };
 
@@ -36,6 +46,8 @@ int main() {
     int recipeCount = 0;
     int userChoice;
     Recipe recipeBook[MAX_RECIPES];
+
+    loadRecipes(recipeBook, recipeCount);
 
     return 0;
 }
