@@ -56,7 +56,15 @@ int main() {
 
     cout << "\nWelcome, " << userName << "! Let's manage your recipe book." << endl;
 
+    while (true) {
+        displayMenu();
+    }
+
     return 0;
+}
+
+void displayMenu() {
+
 }
 
 void loadRecipes(Recipe recipeBook[], int& recipeCount) {
