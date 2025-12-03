@@ -41,6 +41,8 @@ public:
     }
 };
 
+void loadRecipes(Recipe recipeBook[], int& recipeCount);
+
 int main() {
     string userName;
     int recipeCount = 0;
@@ -50,4 +52,8 @@ int main() {
     loadRecipes(recipeBook, recipeCount);
 
     return 0;
+}
+
+void loadRecipes(Recipe recipeBook[], int& recipeCount) {
+    ifstream inFile("recipes.txt");
 }
