@@ -69,4 +69,6 @@ void loadRecipes(Recipe recipeBook[], int& recipeCount) {
         recipeBook[i].loadFile(inFile);
     }
 
+    cout << "\nLoaded " << recipeCount << " saved recipes." << endl;
+
 }
