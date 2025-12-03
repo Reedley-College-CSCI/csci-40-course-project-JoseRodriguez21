@@ -56,4 +56,9 @@ int main() {
 
 void loadRecipes(Recipe recipeBook[], int& recipeCount) {
     ifstream inFile("recipes.txt");
+
+    if (!inFile) {
+        cout << "/nNo saved recipes found." << endl;
+        return;
+    }
 }
