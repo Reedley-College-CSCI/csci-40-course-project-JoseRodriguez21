@@ -54,6 +54,8 @@ int main() {
     cout << "Enter your name: ";
     getline(cin, userName);
 
+    cout << "\nWelcome, " << userName << "! Let's manage your recipe book." << endl;
+
     return 0;
 }
 
