@@ -51,6 +51,9 @@ int main() {
 
     loadRecipes(recipeBook, recipeCount);
 
+    cout << "Enter your name: ";
+    getline(cin, userName);
+
     return 0;
 }
 
