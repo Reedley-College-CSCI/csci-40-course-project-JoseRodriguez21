@@ -58,6 +58,12 @@ int main() {
 
     while (true) {
         displayMenu();
+        
+        while (!(cin >> userChoice)) {
+            cout << "Invalid input, try again: ";
+            cin.clear();
+            cin.ignore(999, '\n');
+        }
     }
 
     return 0;
@@ -91,5 +97,6 @@ void loadRecipes(Recipe recipeBook[], int& recipeCount) {
     }
 
     cout << "\nLoaded " << recipeCount << " saved recipes." << endl;
+
 
 }
