@@ -110,4 +110,12 @@ void loadRecipes(Recipe recipeBook[], int& recipeCount) {
 
 }
 
+void addRecipe(Recipe recipeBook[], int& recipeCount) {
+    if (recipeCount == MAX_RECIPES) {
+        cout << "\nMaximum of 15 recipes reached." << endl;
+        return;
+    }
+}
+
+
 
