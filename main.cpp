@@ -150,8 +150,11 @@ void addRecipe(Recipe recipeBook[], int& recipeCount) {
 }
 
 void searchRecipe(Recipe recipeBook[], int recipeCount) {
-
+    string searchName;
+    cout << "\nEnter recipe name to search: ";
+    getline(cin, searchName);
 }
+
 
 
 
