@@ -30,6 +30,12 @@ public:
         delete[] ingredients;
 
     }
+
+    void inputRecipe(int recipeNum) {
+        cout << "\nEnter the name of recipe #" << recipeNum << ": ";
+        getline(cin, name);
+    }
+
     void loadFile(ifstream& in) {
         getline(in, name);
         in >> ingredientCount;
@@ -41,7 +47,9 @@ public:
     }
 };
 
+
 void loadRecipes(Recipe recipeBook[], int& recipeCount);
+void addRecipe(Recipe recipeBook[], int& recipeCount);
 
 int main() {
     string userName;
@@ -121,6 +129,7 @@ void addRecipe(Recipe recipeBook[], int& recipeCount) {
 
     cout << "\nRecipe added successfully " << endl;
 }
+
 
 
 
