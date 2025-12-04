@@ -64,6 +64,11 @@ int main() {
             cin.clear();
             cin.ignore(999, '\n');
         }
+        cin.ignore();
+
+        if (userChoice == -99)
+            break;
+        
     }
 
     return 0;
@@ -100,3 +105,4 @@ void loadRecipes(Recipe recipeBook[], int& recipeCount) {
 
 
 }
+
