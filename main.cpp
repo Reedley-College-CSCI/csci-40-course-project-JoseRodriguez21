@@ -96,6 +96,7 @@ int main() {
 
         switch (userChoice) {
             case 1: addRecipe(recipeBook, recipeCount); break;
+            case 2: searchRecipe(recipeBook, recipeCount); break;
         }
         
     }
@@ -146,6 +147,7 @@ void addRecipe(Recipe recipeBook[], int& recipeCount) {
 
     cout << "\nRecipe added successfully " << endl;
 }
+
 
 
 
