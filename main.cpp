@@ -36,6 +36,11 @@ public:
         getline(cin, name);
         
         cout << "How many ingredients does " << name << " have?";
+        while (!(cin >> ingredientCount) || ingredientCount < 1) {
+            cout << "Invalid, re-enter the number of ingredients: ";
+            cin.clear();
+            cin.ignore(999, '\n');
+        }
         
     }
 
@@ -132,6 +137,7 @@ void addRecipe(Recipe recipeBook[], int& recipeCount) {
 
     cout << "\nRecipe added successfully " << endl;
 }
+
 
 
 
