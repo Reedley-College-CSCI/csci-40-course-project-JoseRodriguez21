@@ -118,7 +118,10 @@ void addRecipe(Recipe recipeBook[], int& recipeCount) {
 
     recipeBook[recipeCount].inputRecipe(recipeCoount + 1);
     recipeCount++;
+
+    cout << "\nRecipe added successfully " << endl;
 }
+
 
 
 
