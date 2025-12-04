@@ -1,5 +1,5 @@
 [![Review Assignment Due Date](https://classroom.github.com/assets/deadline-readme-button-22041afd0340ce965d47ae6ef1cefeee28c7c493a6346c4f15d667ab976d596c.svg)](https://classroom.github.com/a/7mdzU3H2)
-# CS1 Final Project - [Project Title]
+# CS1 Final Project - [Recipe Book]
 
 ## 1. Overview
 - What problem does your project solve?  
@@ -38,3 +38,4 @@
 
 ## 6. Future Improvements
 - If you had more time, what changes or enhancements would you make?  
+
