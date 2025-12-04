@@ -34,6 +34,9 @@ public:
     void inputRecipe(int recipeNum) {
         cout << "\nEnter the name of recipe #" << recipeNum << ": ";
         getline(cin, name);
+        
+        cout << "How many ingredients does " << name << " have?";
+        
     }
 
     void loadFile(ifstream& in) {
@@ -129,6 +132,7 @@ void addRecipe(Recipe recipeBook[], int& recipeCount) {
 
     cout << "\nRecipe added successfully " << endl;
 }
+
 
 
 
