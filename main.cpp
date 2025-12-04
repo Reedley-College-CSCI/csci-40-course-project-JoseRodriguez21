@@ -47,6 +47,10 @@ public:
 
         cout << "Enter each ingredient: " << endl;
         
+        for (int i = 0; i < ingredientCount; i++) {
+            cout << "Ingredient #" << (i + 1) << ": ";
+            getline(cin, ingredients[i]);
+        }      
     }
 
     void loadFile(ifstream& in) {
@@ -142,6 +146,7 @@ void addRecipe(Recipe recipeBook[], int& recipeCount) {
 
     cout << "\nRecipe added successfully " << endl;
 }
+
 
 
 
