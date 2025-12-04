@@ -64,7 +64,8 @@ int main() {
 }
 
 void displayMenu() {
-
+    cout << "\n        RECIPE BOOK     " << endl;
+    cout << "------------------------------" << endl;
 }
 
 void loadRecipes(Recipe recipeBook[], int& recipeCount) {
