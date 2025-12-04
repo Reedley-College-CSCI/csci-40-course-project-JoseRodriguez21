@@ -115,7 +115,11 @@ void addRecipe(Recipe recipeBook[], int& recipeCount) {
         cout << "\nMaximum of 15 recipes reached." << endl;
         return;
     }
+
+    recipeBook[recipeCount].inputRecipe(recipeCoount + 1);
+    recipeCount++;
 }
+
 
 
 
