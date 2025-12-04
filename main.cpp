@@ -41,6 +41,11 @@ public:
             cin.clear();
             cin.ignore(999, '\n');
         }
+        cin.ignore();
+
+        ingredients = new string[ingredientCount];
+
+        cout << "Enter each ingredient: " << endl;
         
     }
 
@@ -137,6 +142,7 @@ void addRecipe(Recipe recipeBook[], int& recipeCount) {
 
     cout << "\nRecipe added successfully " << endl;
 }
+
 
 
 
