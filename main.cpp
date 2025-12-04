@@ -66,6 +66,13 @@ int main() {
 void displayMenu() {
     cout << "\n        RECIPE BOOK     " << endl;
     cout << "------------------------------" << endl;
+    cout << "1 - Add a recipe" << endl;
+    cout << "2 - Search for a recipe" << endl;
+    cout << "3 - Display all recipes" << endl;
+    cout << "4 - Delete a recipe" << endl;
+    cout << "-99 - exit the program" << endl;
+    cout << "------------------------------" << endl;
+    cout << "Enter a choice: ";
 }
 
 void loadRecipes(Recipe recipeBook[], int& recipeCount) {
