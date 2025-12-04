@@ -153,7 +153,16 @@ void searchRecipe(Recipe recipeBook[], int recipeCount) {
     string searchName;
     cout << "\nEnter recipe name to search: ";
     getline(cin, searchName);
+
+    for (int i = 0; i < recipeCount; i++) {
+        if (recipeBook[i].getName() == searchName) {
+            cout << "\nRecipe found!" << endl;
+            recipeBook[i].display();
+            return;
+        }
+    }
 }
+
 
 
 
