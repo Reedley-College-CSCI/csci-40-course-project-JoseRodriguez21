@@ -67,6 +67,7 @@ public:
 
 void loadRecipes(Recipe recipeBook[], int& recipeCount);
 void addRecipe(Recipe recipeBook[], int& recipeCount);
+void searchRecipe(Recipe recipeBook[], int recipeCount);
 
 int main() {
     string userName;
@@ -146,6 +147,10 @@ void addRecipe(Recipe recipeBook[], int& recipeCount) {
     recipeCount++;
 
     cout << "\nRecipe added successfully " << endl;
+}
+
+void searchRecipe(Recipe recipeBook[], int recipeCount) {
+
 }
 
 
