@@ -68,6 +68,10 @@ int main() {
 
         if (userChoice == -99)
             break;
+
+        switch (userChoice) {
+            case 1: addRecipe(recipeBook, recipeCount); break;
+        }
         
     }
 
@@ -105,4 +109,5 @@ void loadRecipes(Recipe recipeBook[], int& recipeCount) {
 
 
 }
+
 
