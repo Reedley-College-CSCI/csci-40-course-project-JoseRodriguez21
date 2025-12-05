@@ -2,7 +2,9 @@
 // Author: Jose Rodriguez and Daniel Hernandez
 
 /* 
- * Description:
+ * Description: This program takes the idea of a physical recipe book and makes it into a digital version.
+ * Giving the user the opportunity to input up to 15 recipes, having several options over their own recipe 
+ * book. Making it easier and more accessible for users compared to a physical copy.
  *
 */
 
@@ -251,6 +253,7 @@ void deleteRecipe(Recipe recipeBook[], int& recipeCount) {
     }
     cout << "\nRecipe not found." << endl;
 }
+
 
 
 
