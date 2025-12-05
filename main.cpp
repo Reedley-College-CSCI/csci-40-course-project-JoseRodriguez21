@@ -162,7 +162,9 @@ void loadRecipes(Recipe recipeBook[], int& recipeCount) {
 }
 
 void saveRecipes(Recipe recipeBook[], int recipeCount) {
+    ofstream fileOut("recipes.txt");
 
+    fileOut << recipeCount << endl;
 }
 
 void addRecipe(Recipe recipeBook[], int& recipeCount) {
@@ -232,6 +234,7 @@ void deleteRecipe(Recipe recipeBook[], int& recipeCount) {
     }
     cout << "\nRecipe not found." << endl;
 }
+
 
 
 
