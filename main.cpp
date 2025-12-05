@@ -244,6 +244,12 @@ void searchRecipe(Recipe recipeBook[], int recipeCount) {
         for (int j = 0; j < recipeName.length(); j++) {
             recipeName[j] = tolower(recipeName[j]);
         }
+        
+        if (recipeName == searchName) {
+            cout << "\nRecipe found!" << endl;
+            recipeBook[i].display();
+            return;
+        }
     }
 
     cout << "\nRecipe not found." << endl;
@@ -288,6 +294,7 @@ void deleteRecipe(Recipe recipeBook[], int& recipeCount) {
     }
     cout << "\nRecipe not found." << endl;
 }
+
 
 
 
