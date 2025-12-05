@@ -62,6 +62,14 @@ public:
         }
     }
 
+    string getName() const {
+        return name;
+    }
+
+    int getIngredientCount() const {
+        return ingredientCount;
+    }
+
     void loadFile(ifstream& in) {
         getline(in, name);
         in >> ingredientCount;
@@ -190,6 +198,7 @@ void displayAllRecipes(Recipe recipeBook[], int recipeCount, const string& userN
         recipeBook[i].display();
     }
 }
+
 
 
 
