@@ -98,6 +98,8 @@ int main() {
         switch (userChoice) {
             case 1: addRecipe(recipeBook, recipeCount); break;
             case 2: searchRecipe(recipeBook, recipeCount); break;
+            case 3: displayAllRecipes(recipeBook, recipeCount, userName); breek;
+            
         }
         
     }
@@ -163,6 +165,10 @@ void searchRecipe(Recipe recipeBook[], int recipeCount) {
     }
 
     cout << "\nRecipe not found." << endl;
+}
+
+void displayAllRecipes(Recipe recipeBook[], int recipeCount, const string& userName) {
+
 }
 
 
