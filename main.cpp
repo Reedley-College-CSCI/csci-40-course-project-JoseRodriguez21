@@ -53,6 +53,15 @@ public:
         }      
     }
 
+    void display() const {
+        cout << "\nRecipe: " << name << endl;
+        cout << "Ingredients: " << endl;
+
+        for (int i = 0; i < ingredientCount; i++) {
+            cout << " - " << ingredients[i] << endl;
+        }
+    }
+
     void loadFile(ifstream& in) {
         getline(in, name);
         in >> ingredientCount;
@@ -181,6 +190,7 @@ void displayAllRecipes(Recipe recipeBook[], int recipeCount, const string& userN
         recipeBook[i].display();
     }
 }
+
 
 
 
