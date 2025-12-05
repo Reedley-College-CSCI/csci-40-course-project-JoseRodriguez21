@@ -33,6 +33,15 @@ public:
         ingredients = nullptr;
     }
 
+    void copyFrom(const Recipe& other) {
+        name = other.name;
+        ingredientCount = other.ingredientCount;
+
+        delete[] ingredients;
+
+        
+    }
+
     void inputRecipe(int recipeNum) {
         cout << "\nEnter the name of recipe #" << recipeNum << ": ";
         getline(cin, name);
@@ -267,3 +276,4 @@ void deleteRecipe(Recipe recipeBook[], int& recipeCount) {
     }
     cout << "\nRecipe not found." << endl;
 }
+
