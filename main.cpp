@@ -202,8 +202,12 @@ void displayAllRecipes(Recipe recipeBook[], int recipeCount, const string& userN
 }
 
 void deleteRecipe(Recipe recipeBook[], int& recipeCount) {
-
+    if (recipeCount == 0) {
+        cout << "\nNo recipes to delete." << endl;
+        return;
+    }
 }
+
 
 
 
