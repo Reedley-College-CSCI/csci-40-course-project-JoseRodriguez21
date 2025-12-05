@@ -73,6 +73,9 @@ public:
     void saveFile(ofstream& out) const {
         out << name << endl;
         out << ingredientCount << endl;
+        for (int i = 0; i < ingredientCount; i++) {
+            out << ingredients[i] << endl;
+        }
     }
 
     void loadFile(ifstream& in) {
@@ -245,6 +248,7 @@ void deleteRecipe(Recipe recipeBook[], int& recipeCount) {
     }
     cout << "\nRecipe not found." << endl;
 }
+
 
 
 
