@@ -30,7 +30,6 @@ public:
     }
     ~Recipe() {
         delete[] ingredients;
-        ingredients = nullptr;
     }
 
     void copyFrom(const Recipe& other) {
@@ -38,6 +37,15 @@ public:
         ingredientCount = other.ingredientCount;
 
         delete[] ingredients;
+        if (ingredientCount > 0) {
+            ingredients = new string[ingredientCount];
+            for (int i = 0; i < ingredientCount; i++) {
+                ingredients[i] = other.ingredients[i];
+            }
+        } 
+        else {
+            ingredients = nullptr;
+        }
 
         
     }
@@ -265,7 +273,7 @@ void deleteRecipe(Recipe recipeBook[], int& recipeCount) {
         if (recipeBook[i].getName() == deleteName) {
 
             for (int j = i; j < recipeCount - 1; j++) {
-                recipeBook[j] = recipeBook[j + 1];
+                recipeBook[j].deleteFrom(recipeBook[j + 1]);
             }
 
             recipeCount--;
@@ -276,4 +284,5 @@ void deleteRecipe(Recipe recipeBook[], int& recipeCount) {
     }
     cout << "\nRecipe not found." << endl;
 }
+
 
