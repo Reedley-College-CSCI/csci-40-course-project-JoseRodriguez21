@@ -83,6 +83,7 @@ public:
 
 void displayMenu();
 void loadRecipes(Recipe recipeBook[], int& recipeCount);
+void saveRecipes(Recipe recipe[], int recipeCount);
 void addRecipe(Recipe recipeBook[], int& recipeCount);
 void searchRecipe(Recipe recipeBook[], int recipeCount);
 void displayAllRecipes(Recipe recipeBook[], int recipeCount, const string& userName);
@@ -123,6 +124,8 @@ int main() {
         
     }
 
+    saveRecipes(recipeBook, recipeCount);
+
     return 0;
 }
 
@@ -155,6 +158,10 @@ void loadRecipes(Recipe recipeBook[], int& recipeCount) {
 
     cout << "\nLoaded " << recipeCount << " saved recipes." << endl;
 
+
+}
+
+void saveRecipes(Recipe recipeBook[], int recipeCount) {
 
 }
 
@@ -225,6 +232,7 @@ void deleteRecipe(Recipe recipeBook[], int& recipeCount) {
     }
     cout << "\nRecipe not found." << endl;
 }
+
 
 
 
