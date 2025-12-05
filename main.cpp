@@ -165,6 +165,12 @@ void saveRecipes(Recipe recipeBook[], int recipeCount) {
     ofstream fileOut("recipes.txt");
 
     fileOut << recipeCount << endl;
+
+    for (int i = 0; i < recipeCount; i++) {
+        recipeBook[i].saveFile(fileOut);
+    }
+
+    cout << "\nRecipes saved to recipes.txt" << endl;
 }
 
 void addRecipe(Recipe recipeBook[], int& recipeCount) {
@@ -234,6 +240,7 @@ void deleteRecipe(Recipe recipeBook[], int& recipeCount) {
     }
     cout << "\nRecipe not found." << endl;
 }
+
 
 
 
