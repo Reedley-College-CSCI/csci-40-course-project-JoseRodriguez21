@@ -283,7 +283,12 @@ void deleteRecipe(Recipe recipeBook[], int& recipeCount) {
         deleteName[i] = tolower(deleteName[i]);
     }
     
-    for (int i = 0; i < recipeCount; i++) {
+   for (int i = 0; i < recipeCount; i++) {
+        string recipeName = recipeBook[i].getName();
+
+        for (int j = 0; j < recipeName.length(); j++) {
+            recipeName[j] = tolower(recipeName[j]);
+        }
         
         if (recipeName == deleteName) {
 
@@ -299,6 +304,7 @@ void deleteRecipe(Recipe recipeBook[], int& recipeCount) {
     }
     cout << "\nRecipe not found." << endl;
 }
+
 
 
 
