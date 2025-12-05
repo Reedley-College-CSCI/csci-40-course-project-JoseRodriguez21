@@ -206,7 +206,12 @@ void deleteRecipe(Recipe recipeBook[], int& recipeCount) {
         cout << "\nNo recipes to delete." << endl;
         return;
     }
+
+    string deleteName;
+    cout << "\nEnter recipe name to delete: ";
+    getline(cin, deleteName);
 }
+
 
 
 
