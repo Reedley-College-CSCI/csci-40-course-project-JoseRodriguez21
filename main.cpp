@@ -68,6 +68,7 @@ void displayMenu();
 void loadRecipes(Recipe recipeBook[], int& recipeCount);
 void addRecipe(Recipe recipeBook[], int& recipeCount);
 void searchRecipe(Recipe recipeBook[], int recipeCount);
+void displayAllRecipes(Recipe recipeBook[], int recipeCount, const string& userName);
 
 int main() {
     string userName;
@@ -175,8 +176,12 @@ void displayAllRecipes(Recipe recipeBook[], int recipeCount, const string& userN
 
     cout << "\n" << userName << "'s Recipe Book" << endl;
     cout << "------------------------------" << endl;
-        
+
+    for (int i = 0; i < recipeCount; i++) {
+        recipeBook[i].display();
+    }
 }
+
 
 
 
