@@ -36,6 +36,7 @@ public:
         getline(cin, name);
         
         cout << "How many ingredients does " << name << " have?";
+        
         while (!(cin >> ingredientCount) || ingredientCount < 1) {
             cout << "Invalid, re-enter the number of ingredients: ";
             cin.clear();
@@ -91,7 +92,7 @@ public:
 
 void displayMenu();
 void loadRecipes(Recipe recipeBook[], int& recipeCount);
-void saveRecipes(Recipe recipe[], int recipeCount);
+void saveRecipes(Recipe recipeBook[], int recipeCount);
 void addRecipe(Recipe recipeBook[], int& recipeCount);
 void searchRecipe(Recipe recipeBook[], int recipeCount);
 void displayAllRecipes(Recipe recipeBook[], int recipeCount, const string& userName);
@@ -125,7 +126,7 @@ int main() {
         switch (userChoice) {
             case 1: addRecipe(recipeBook, recipeCount); break;
             case 2: searchRecipe(recipeBook, recipeCount); break;
-            case 3: displayAllRecipes(recipeBook, recipeCount, userName); breek;
+            case 3: displayAllRecipes(recipeBook, recipeCount, userName); break;
             case 4: deleteRecipe(recipeBook, recipeCount); break;
             default: cout << "\nInvalid option." << endl; break;
         }
@@ -189,7 +190,7 @@ void addRecipe(Recipe recipeBook[], int& recipeCount) {
         return;
     }
 
-    recipeBook[recipeCount].inputRecipe(recipeCoount + 1);
+    recipeBook[recipeCount].inputRecipe(recipeCount + 1);
     recipeCount++;
 
     cout << "\nRecipe added successfully " << endl;
@@ -250,6 +251,7 @@ void deleteRecipe(Recipe recipeBook[], int& recipeCount) {
     }
     cout << "\nRecipe not found." << endl;
 }
+
 
 
 
