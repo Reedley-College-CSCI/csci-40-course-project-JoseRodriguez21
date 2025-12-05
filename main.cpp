@@ -70,6 +70,11 @@ public:
         return ingredientCount;
     }
 
+    void saveFile(ofstream& out) const {
+        out << name << endl;
+        out << ingredientCount << endl;
+    }
+
     void loadFile(ifstream& in) {
         getline(in, name);
         in >> ingredientCount;
@@ -240,6 +245,7 @@ void deleteRecipe(Recipe recipeBook[], int& recipeCount) {
     }
     cout << "\nRecipe not found." << endl;
 }
+
 
 
 
