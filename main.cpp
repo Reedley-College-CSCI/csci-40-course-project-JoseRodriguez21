@@ -213,10 +213,19 @@ void deleteRecipe(Recipe recipeBook[], int& recipeCount) {
 
     for (int i = 0; i < recipeCount; i++) {
         if (recipeBook[i].getName() == deleteName) {
-        
+
+            for (int j = i; j < recipeCount - 1; j++) {
+                recipeBook[j] = recipeBook[j + 1];
+            }
+
+            recipeCount--;
+
+            cout << "\nRecipe " << deleteName << " deleted." << endl;
+            return;
         }
     }
 }
+
 
 
 
