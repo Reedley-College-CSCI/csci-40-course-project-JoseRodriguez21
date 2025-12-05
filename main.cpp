@@ -30,7 +30,7 @@ public:
     }
     ~Recipe() {
         delete[] ingredients;
-
+        ingredients = nullptr;
     }
 
     void inputRecipe(int recipeNum) {
@@ -257,6 +257,7 @@ void deleteRecipe(Recipe recipeBook[], int& recipeCount) {
     }
     cout << "\nRecipe not found." << endl;
 }
+
 
 
 
