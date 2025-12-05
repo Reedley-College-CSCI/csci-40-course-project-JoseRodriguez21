@@ -161,7 +161,10 @@ void searchRecipe(Recipe recipeBook[], int recipeCount) {
             return;
         }
     }
+
+    cout << "\nRecipe not found." << endl;
 }
+
 
 
 
