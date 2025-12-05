@@ -210,7 +210,14 @@ void deleteRecipe(Recipe recipeBook[], int& recipeCount) {
     string deleteName;
     cout << "\nEnter recipe name to delete: ";
     getline(cin, deleteName);
+
+    for (int i = 0; i < recipeCount; i++) {
+        if (recipeBook[i].getName() == deleteName) {
+        
+        }
+    }
 }
+
 
 
 
