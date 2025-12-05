@@ -134,6 +134,8 @@ int main() {
 
     saveRecipes(recipeBook, recipeCount);
 
+    cout << "\nGoodbye, " << userName << "!" << endl;
+
     return 0;
 }
 
@@ -248,6 +250,7 @@ void deleteRecipe(Recipe recipeBook[], int& recipeCount) {
     }
     cout << "\nRecipe not found." << endl;
 }
+
 
 
 
