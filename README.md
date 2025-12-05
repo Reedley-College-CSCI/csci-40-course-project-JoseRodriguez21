@@ -30,10 +30,11 @@ because the ingredients weren't consistent from recipe to recipe.
 
 ## 3. Testing Summary
 - **Structured Testing Log:** Include a table with test cases, expected output, actual output, and pass/fail status.  
-- What testing methods did you use?  
+- What testing methods did you use?
+- I ran the program and tried the options from the menu displayed in the program.
 - Provide examples of test inputs (valid and invalid) and describe how your program responds.
 - Test Case | Description              | Input              | Expected                 | Actual               | P/F
-- TC-01     | Add valid recipe         | Add pasta,         | Recipe saved             | Recipe saved         | P
+- TC-01     | Add recipe               | Add pasta,         | Recipe saved             | Recipe saved         | P
 - TC-02     | Empty recipe name        | Name = ""          |Recipe can't be empty     | Recipe can't be empty| P
 - TC-03     | Max recipes reached      | Add 16th recipe    |Maximum reached           |Maximum reached       | P
 - TC-04     | Search existing recipe   | Search "Pasta"     | Recipe: Pasta            | Recipe: Pasta         | P
@@ -66,6 +67,7 @@ account for any problems the user might encounter that can break the program.
 - If you had more time, what changes or enhancements would you make?
 - If I had more time or started earlier, I would add an option to edit the recipes, which was something that this program would have had but didn't manage to finish in time.
 This feature could have brought this program to the next level and made it more interactive.
+
 
 
 
