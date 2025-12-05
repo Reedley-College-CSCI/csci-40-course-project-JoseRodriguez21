@@ -46,6 +46,7 @@ public:
         }
         cin.ignore();
 
+        delete[] ingredients;
         ingredients = new string[ingredientCount];
 
         cout << "Enter each ingredient: " << endl;
@@ -85,6 +86,9 @@ public:
         getline(in, name);
         in >> ingredientCount;
         in.ignore();
+        
+        delete[] ingredients;
+        ingredients = new string[ingredientCount];
 
         for (int i = 0; i < ingredientCount; i++) {
             getline(in, ingredients[i]);
@@ -158,7 +162,7 @@ void loadRecipes(Recipe recipeBook[], int& recipeCount) {
     ifstream inFile("recipes.txt");
 
     if (!inFile) {
-        cout << "/nNo saved recipes found." << endl;
+        cout << "\nNo saved recipes found." << endl;
         return;
     }
 
@@ -253,6 +257,7 @@ void deleteRecipe(Recipe recipeBook[], int& recipeCount) {
     }
     cout << "\nRecipe not found." << endl;
 }
+
 
 
 
