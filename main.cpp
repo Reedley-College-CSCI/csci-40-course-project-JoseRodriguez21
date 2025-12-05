@@ -115,6 +115,11 @@ int main() {
     cout << "Enter your name: ";
     getline(cin, userName);
 
+    while (userName == "") {
+        cout << "Name cannot be blank. Enter again: ";
+        getline(cin, userName);
+    }
+
     cout << "\nWelcome, " << userName << "! Let's manage your recipe book." << endl;
 
     while (true) {
@@ -257,6 +262,7 @@ void deleteRecipe(Recipe recipeBook[], int& recipeCount) {
     }
     cout << "\nRecipe not found." << endl;
 }
+
 
 
 
