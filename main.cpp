@@ -64,7 +64,7 @@ public:
     }
 };
 
-
+void displayMenu();
 void loadRecipes(Recipe recipeBook[], int& recipeCount);
 void addRecipe(Recipe recipeBook[], int& recipeCount);
 void searchRecipe(Recipe recipeBook[], int recipeCount);
@@ -164,6 +164,7 @@ void searchRecipe(Recipe recipeBook[], int recipeCount) {
 
     cout << "\nRecipe not found." << endl;
 }
+
 
 
 
