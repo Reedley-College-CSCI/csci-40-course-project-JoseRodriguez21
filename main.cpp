@@ -279,6 +279,10 @@ void deleteRecipe(Recipe recipeBook[], int& recipeCount) {
     cout << "\nEnter recipe name to delete: ";
     getline(cin, deleteName);
 
+    for (int i = 0; i < deleteName.length(); i++) {
+        deleteName[i] = tolower(deleteName[i]);
+    }
+    
     for (int i = 0; i < recipeCount; i++) {
         if (recipeBook[i].getName() == deleteName) {
 
@@ -294,6 +298,7 @@ void deleteRecipe(Recipe recipeBook[], int& recipeCount) {
     }
     cout << "\nRecipe not found." << endl;
 }
+
 
 
 
