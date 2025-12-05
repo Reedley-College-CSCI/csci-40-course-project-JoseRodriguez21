@@ -236,14 +236,14 @@ void searchRecipe(Recipe recipeBook[], int recipeCount) {
     getline(cin, searchName);
 
     for (int i = 0; i < searchName.length(); i++) {
-        searchName[i] = tolower(searchName[i]);
+        searchName[i] = tolower((unsigned char)searchName[i]);
     }
 
     for (int i = 0; i < recipeCount; i++) {
         string recipeName = recipeBook[i].getName();
 
         for (int j = 0; j < recipeName.length(); j++) {
-            recipeName[j] = tolower(recipeName[j]);
+            recipeName[j] = tolower((unsigned char)recipeName[j]);
         }
         
         if (recipeName == searchName) {
@@ -281,14 +281,15 @@ void deleteRecipe(Recipe recipeBook[], int& recipeCount) {
     getline(cin, deleteName);
 
     for (int i = 0; i < deleteName.length(); i++) {
-        deleteName[i] = tolower(deleteName[i]);
+        deleteName[i] = tolower((unsigned char)deleteName[i]);
+
     }
     
    for (int i = 0; i < recipeCount; i++) {
         string recipeName = recipeBook[i].getName();
 
         for (int j = 0; j < recipeName.length(); j++) {
-            recipeName[j] = tolower(recipeName[j]);
+            recipeName[j] = tolower((unsigned char)recipeName[j]);
         }
         
         if (recipeName == deleteName) {
@@ -305,6 +306,7 @@ void deleteRecipe(Recipe recipeBook[], int& recipeCount) {
     }
     cout << "\nRecipe not found." << endl;
 }
+
 
 
 
