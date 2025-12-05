@@ -174,6 +174,11 @@ void loadRecipes(Recipe recipeBook[], int& recipeCount) {
     inFile >> recipeCount;
     inFile.ignore();
 
+    if (recipeCount < 0 || recipeCount > MAX_RECIPES) {
+        recipeCount = 0;
+        return;
+    }
+    
     for (int i = 0; i < recipeCount; i++) {
         recipeBook[i].loadFile(inFile);
     }
@@ -262,6 +267,7 @@ void deleteRecipe(Recipe recipeBook[], int& recipeCount) {
     }
     cout << "\nRecipe not found." << endl;
 }
+
 
 
 
