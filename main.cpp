@@ -86,6 +86,7 @@ void loadRecipes(Recipe recipeBook[], int& recipeCount);
 void addRecipe(Recipe recipeBook[], int& recipeCount);
 void searchRecipe(Recipe recipeBook[], int recipeCount);
 void displayAllRecipes(Recipe recipeBook[], int recipeCount, const string& userName);
+void deleteRecipe(Recipe recipeBook[], int& recipeCount);
 
 int main() {
     string userName;
@@ -117,6 +118,7 @@ int main() {
             case 1: addRecipe(recipeBook, recipeCount); break;
             case 2: searchRecipe(recipeBook, recipeCount); break;
             case 3: displayAllRecipes(recipeBook, recipeCount, userName); breek;
+            case 4: deleteRecipe(recipeBook, recipeCount); break;
             
         }
         
@@ -199,7 +201,9 @@ void displayAllRecipes(Recipe recipeBook[], int recipeCount, const string& userN
     }
 }
 
+void deleteRecipe(Recipe recipeBook[], int& recipeCount) {
 
+}
 
 
 
