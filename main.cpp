@@ -12,6 +12,7 @@
 #include <iomanip>
 #include <string>
 #include <fstream>
+#include <cctype>
 using namespace std;
 
 const int MAX_RECIPES = 15;
@@ -304,6 +305,7 @@ void deleteRecipe(Recipe recipeBook[], int& recipeCount) {
     }
     cout << "\nRecipe not found." << endl;
 }
+
 
 
 
