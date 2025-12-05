@@ -2,17 +2,29 @@
 # CS1 Final Project - [Recipe Book]
 
 ## 1. Overview
-- What problem does your project solve?  
-- Briefly describe the purpose and key features of your program.  
+- What problem does your project solve?
+- This project makes having all your recipes stored more accessible and easier to store than having them on a physical copy.
+- Briefly describe the purpose and key features of your program.
+- The purpose of this program is to enable the user to be able to save recipes, delete them, and search them. The key feature is being able
+to see all of them at once without having to flip through pages like a regular recipe book. 
 
 ---
 
 ## 2. Design Decisions
-- What fundamental programming constructs and data types did you use, and why?  
-- Why did you choose to structure your data using structs?  
-- How did you implement searching and sorting? What algorithms did you use and why?  
-- How do you ensure data persistence between program runs?  
-- Did you consider alternative approaches? If so, why did you not use them?  
+- What fundamental programming constructs and data types did you use, and why?
+- I use a lot of for loops that are key to checking for something when searching or deleting. The switch statement was another construct
+  That was utilized in my program for when the user enters a value. The data types used were integers and strings, which were the only types I utilized.  
+- Why did you choose to structure your data using structs?
+- I didn't use a struct in my program; instead, I opted to use classes and functions that combine data and behavior together.
+- How did you implement searching and sorting? What algorithms did you use and why?
+- The program only has a searching system to find the recipe, and it's the same one to find it and to delete it; the one used was the linear search algorithm.
+Other algorithms used were inputting values into the text file or gathering the data.
+- How do you ensure data persistence between program runs?
+- The way the data was saved between runs is creating a recipe text file once the first recipe was inputted. This helps keep the recipes inputted from the user
+into the next run.
+- Did you consider alternative approaches? If so, why did you not use them?
+- The alternative approach for this program was using a class, which I ended up using. This left the first approach of using a struct out of the way. This change occurred
+because the ingredients weren't consistent from recipe to recipe.
 
 ---
 
@@ -26,16 +38,23 @@
 ## 4. Technical Walkthrough
 - Explain the main functionality of your program.  
 - **Include a link to your required video demonstration** showcasing how the project works (**3-7 minutes**). 
-    Make sure it shareable without approval needed.
+    Ensure it is shareable without requiring approval.
+  https://youtu.be/ROlPna1SoJQ
 
 ---
 
 ## 5. Challenges and Lessons Learned
-- What challenges did you encounter while working on this project?  
-- What key lessons did you learn about programming and problem-solving?  
+- What challenges did you encounter while working on this project?
+- The main challenge was how to make this program not crash in certain situations, which was the reason why I had difficulty adding more features.
+- What key lessons did you learn about programming and problem-solving?
+- I learned that even though you have an idea of how your code is going to be, some things can change in the process. Also, coding the project takes time because you have to take
+account for any problems the user might encounter that can break the program.
 
 ---
 
 ## 6. Future Improvements
-- If you had more time, what changes or enhancements would you make?  
+- If you had more time, what changes or enhancements would you make?
+- If I had more time or started earlier, I would add an option to edit the recipes, which was something that this program would have had but didn't manage to finish in time.
+This feature could have brought this program to the next level and made it more interactive.
+
 
