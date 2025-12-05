@@ -284,7 +284,8 @@ void deleteRecipe(Recipe recipeBook[], int& recipeCount) {
     }
     
     for (int i = 0; i < recipeCount; i++) {
-        if (recipeBook[i].getName() == deleteName) {
+        
+        if (recipeName == deleteName) {
 
             for (int j = i; j < recipeCount - 1; j++) {
                 recipeBook[j].copyFrom(recipeBook[j + 1]);
@@ -298,6 +299,7 @@ void deleteRecipe(Recipe recipeBook[], int& recipeCount) {
     }
     cout << "\nRecipe not found." << endl;
 }
+
 
 
 
