@@ -234,6 +234,10 @@ void searchRecipe(Recipe recipeBook[], int recipeCount) {
     cout << "\nEnter recipe name to search: ";
     getline(cin, searchName);
 
+    for (int i = 0; i < searchName.length(); i++) {
+        searchName[i] = tolower(searchName[i]);
+    }
+
     for (int i = 0; i < recipeCount; i++) {
         if (recipeBook[i].getName() == searchName) {
             cout << "\nRecipe found!" << endl;
@@ -284,6 +288,7 @@ void deleteRecipe(Recipe recipeBook[], int& recipeCount) {
     }
     cout << "\nRecipe not found." << endl;
 }
+
 
 
 
