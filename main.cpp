@@ -172,7 +172,12 @@ void displayAllRecipes(Recipe recipeBook[], int recipeCount, const string& userN
         cout << "\nNo recipes to display." << endl;
         return;
     }
+
+    cout << "\n" << userName << "'s Recipe Book" << endl;
+    cout << "------------------------------" << endl;
+        
 }
+
 
 
 
