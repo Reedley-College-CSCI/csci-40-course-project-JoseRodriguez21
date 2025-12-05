@@ -1,13 +1,13 @@
 [![Review Assignment Due Date](https://classroom.github.com/assets/deadline-readme-button-22041afd0340ce965d47ae6ef1cefeee28c7c493a6346c4f15d667ab976d596c.svg)](https://classroom.github.com/a/7mdzU3H2)
-# CS1 Final Project - Recipe Book - Jose Rodriguez
+# CS1 Final Project - Recipe Book - Jose Rodriguez - Daniel Hernandez 
 
 ## 1. Overview
 - What problem does your project solve?
 - This project makes having all your recipes stored more accessible and easier to store than having them on a physical copy.
 - Briefly describe the purpose and key features of your program.
 - The purpose of this program is to enable the user to be able to save recipes, delete them, and search them. The key feature is being able
-to see all of them at once without having to flip through pages like a regular recipe book. 
-
+to see all of them at once without having to flip through pages like a regular recipe book.
+- My partner and I created a program to solve the problem of sorting, organizing, and saving recipes for users, allowing them to enter the name and the number of ingredients, naming the ingredients, and store it in memory. 
 ---
 
 ## 2. Design Decisions
@@ -25,7 +25,7 @@ into the next run.
 - Did you consider alternative approaches? If so, why did you not use them?
 - The alternative approach for this program was using a class, which I ended up using. This left the first approach of using a struct out of the way. This change occurred
 because the ingredients weren't consistent from recipe to recipe.
-
+-  For this project me my partner and used C++ features that we learned throughout the semester to build our recipe management program. I chose strings to store recipes, names, and ingredients, and integers to track things and menu choices. All the recipes are stored in a fixed sized array because the program only allows up to 5 recipes. Inside each recipe object, I used a dynamic array of strings so that every recipe has its own number of ingredients.  We used loops, if-statements, and separate functions to keep the code organized. 
 ---
 
 ## 3. Testing Summary
@@ -67,6 +67,7 @@ account for any problems the user might encounter that can break the program.
 - If you had more time, what changes or enhancements would you make?
 - If I had more time or started earlier, I would add an option to edit the recipes, which was something that this program would have had but didn't manage to finish in time.
 This feature could have brought this program to the next level and made it more interactive.
+
 
 
 
