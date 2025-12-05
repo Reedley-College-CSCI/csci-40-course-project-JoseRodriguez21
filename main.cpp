@@ -105,7 +105,6 @@ int main() {
         displayMenu();
         
         while (!(cin >> userChoice)) {
-            cout << "Invalid input, try again: ";
             cin.clear();
             cin.ignore(999, '\n');
         }
@@ -119,7 +118,7 @@ int main() {
             case 2: searchRecipe(recipeBook, recipeCount); break;
             case 3: displayAllRecipes(recipeBook, recipeCount, userName); breek;
             case 4: deleteRecipe(recipeBook, recipeCount); break;
-            
+            default: cout << "\nInvalid option." << endl; break;
         }
         
     }
@@ -226,6 +225,7 @@ void deleteRecipe(Recipe recipeBook[], int& recipeCount) {
     }
     cout << "\nRecipe not found." << endl;
 }
+
 
 
 
