@@ -168,8 +168,12 @@ void searchRecipe(Recipe recipeBook[], int recipeCount) {
 }
 
 void displayAllRecipes(Recipe recipeBook[], int recipeCount, const string& userName) {
-
+    if (recipeCount == 0) {
+        cout << "\nNo recipes to display." << endl;
+        return;
+    }
 }
+
 
 
 
